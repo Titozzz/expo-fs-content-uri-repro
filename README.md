@@ -1,6 +1,6 @@
 # expo-file-system content:// repro (Android)
 
-Two expo-file-system 57.0.7 issues on Android, with `content://` files picked through `File.pickFileAsync()`.
+Two expo-file-system 58.0.13 (also reproduced on 57.0.7) issues on Android, with `content://` files picked through `File.pickFileAsync()`.
 
 The app ships its own documents provider ("Repro files" in the system picker) with four 256 KiB files:
 
@@ -25,7 +25,7 @@ In the app, tap a button: the picker opens in "Repro files" (otherwise open it f
 
 ## Expected vs actual
 
-Actual results below: Pixel_API_36 emulator (Android 16), debug build, expo-file-system 57.0.7.
+Actual results below: Pixel_API_36 emulator (Android 16), debug build, expo-file-system 58.0.13 (also reproduced on 57.0.7).
 
 **Pick + upload** (`File.upload`, `BINARY_CONTENT`)
 - expected: every file uploads, the server receives 262144 bytes
