@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "expo-fs-content-uri-repro",
+    "slug": "expo-fs-content-uri-repro",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.example.expofscontenturirepro"
+    }
+  }
+}

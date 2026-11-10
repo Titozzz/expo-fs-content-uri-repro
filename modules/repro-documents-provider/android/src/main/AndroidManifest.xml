@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <!-- Shows up in the system file picker as "Repro files" -->
+    <provider
+      android:name="expo.modules.reprodocumentsprovider.ReproDocumentsProvider"
+      android:authorities="expo.modules.reprodocumentsprovider.documents"
+      android:exported="true"
+      android:grantUriPermissions="true"
+      android:permission="android.permission.MANAGE_DOCUMENTS">
+      <intent-filter>
+        <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+      </intent-filter>
+    </provider>
+  </application>
+</manifest>
